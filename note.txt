@@ -1,0 +1,26 @@
+Activity 1: Find all lines in review.csv that mention the word "quality".
+grep "quality" GREP/review.csv
+
+Activity 2: Find all lines in hamlet.txt that contain the word "francisco" regardless of case.
+grep -i "francisco" GREP/hamlet.txt
+
+Activity 3: Count how many times the word "battery" (case insensitive) appears in review.csv.
+grep -ci "battery" GREP/review.csv
+
+Activity 4: Search for the word "excellent" in review.csv and display the line numbers of the matches.
+grep -ni "excellent" GREP/review.csv
+
+Activity 5: Find all lines in hamlet.txt that do not contain the word "the"
+grep -v "the" GREP/hamlet.txt
+
+Activity 6: Find all lines in review.csv that contain the word "design" or "performance"
+grep -E "design|performance" GREP/hamlet.txt
+
+Activity 7: Extract and display only the words "battery" or "Battery" from review.csv.
+grep -o "battery\|Battery" GREP/review.csv
+
+Activity 8: Use find to locate all .txt files in the GREP directory and search for lines containing "sick" in those files.
+find GREP/ -type f -name '*.txt' -exec grep 'sick' {} +
+
+Activity 9: Searching for Patterns in Product Reviews
+TBD
